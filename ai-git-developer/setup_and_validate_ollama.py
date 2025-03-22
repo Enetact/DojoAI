@@ -48,9 +48,9 @@ def validate_api():
 # Step 5: Tag current code repo as v1
 def tag_git_repo():
     subprocess.run(f"git -C {GIT_REPO_PATH} add .", shell=True, check=True)
-    subprocess.run(f'git -C {GIT_REPO_PATH} commit -m "Stable v1"', shell=True, check=True)
-    subprocess.run(f'git -C {GIT_REPO_PATH} tag v1', shell=True, check=False)
-    print("Repo tagged as v1.")
+    subprocess.run(f'git -C {GIT_REPO_PATH} commit -m "Stable v2"', shell=True, check=True)
+    subprocess.run(f'git -C {GIT_REPO_PATH} tag v2', shell=True, check=False)
+    print("Repo tagged as v2.")
 
 # Step 6: Backup and restructure repo
 def restructure_repo():
