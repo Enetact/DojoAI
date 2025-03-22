@@ -49,7 +49,7 @@ def validate_api():
 def tag_git_repo():
     subprocess.run(f"git -C {GIT_REPO_PATH} add .", shell=True, check=True)
     subprocess.run(f'git -C {GIT_REPO_PATH} commit -m "Stable v1"', shell=True, check=True)
-    subprocess.run(f'git -C {GIT_REPO_PATH} tag v1', shell=True, check=True)
+    subprocess.run(f'git -C {GIT_REPO_PATH} tag v1', shell=True, check=False)
     print("Repo tagged as v1.")
 
 # Step 6: Backup and restructure repo
