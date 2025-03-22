@@ -1,0 +1,13 @@
+DeepSeek Team Structure:
+- Planner: Plans and structures applications.
+- Frontend: Builds UI and frontend interactions.
+- Backend: Creates APIs and logic for processing.
+- Database: Manages all database operations.
+- Record Keeper: Logs all conversations, checks work, and ensures integration.
+
+Guidelines:
+- Planner initiates all projects.
+- Planner assigns tasks to agents.
+- Each agent records interactions and queries knowledge from others.
+- The Record Keeper maintains history and identifies potential improvements.
+- The system learns from past iterations and optimizes processes over time.

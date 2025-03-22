@@ -1,0 +1,1159 @@
+2025-03-15 03:03:33,696 - Error running C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py: llama_model_loader: loaded meta data with 26 key-value pairs and 219 tensors from C:\DeepSeekAI\models\small_models\initializer.safetensors (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = deepseek-ai
+llama_model_loader: - kv   2:                       llama.context_length u32              = 16384
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 2048
+llama_model_loader: - kv   4:                          llama.block_count u32              = 24
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 5504
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 16
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 16
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 100000.000000
+llama_model_loader: - kv  11:                    llama.rope.scaling.type str              = linear
+llama_model_loader: - kv  12:                  llama.rope.scaling.factor f32              = 4.000000
+llama_model_loader: - kv  13:                          general.file_type u32              = 2
+llama_model_loader: - kv  14:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32256]   = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32256]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32256]   = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  18:                      tokenizer.ggml.merges arr[str,31757]   = ["\u0120 \u0120", "\u0120 t", "\u0120 a", "i n", "h e...
+llama_model_loader: - kv  19:                tokenizer.ggml.bos_token_id u32              = 32013
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 32021
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 32014
+llama_model_loader: - kv  22:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  23:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   49 tensors
+llama_model_loader: - type q4_0:  169 tensors
+llama_model_loader: - type q6_K:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 738.88 MiB (4.60 BPW) 
+load: missing pre-tokenizer type, using: 'default'
+load:                                             
+load: ************************************        
+load: GENERATION QUALITY WILL BE DEGRADED!        
+load: CONSIDER REGENERATING THE MODEL             
+load: ************************************        
+load:                                             
+init_tokenizer: initializing tokenizer for type 2
+load: control-looking token:  32015 '<\uff5cfim\u2581hole\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32017 '<\uff5cfim\u2581end\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32016 '<\uff5cfim\u2581begin\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control token:  32014 '<\uff5cend\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32015 '<\uff5cfim\u2581hole\uff5c>' is not marked as EOG
+load: control token:  32017 '<\uff5cfim\u2581end\uff5c>' is not marked as EOG
+load: control token:  32016 '<\uff5cfim\u2581begin\uff5c>' is not marked as EOG
+load: control token:  32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32021 '<|EOT|>' is not marked as EOG
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special tokens cache size = 256
+load: token to piece cache size = 0.1792 MB
+print_info: arch             = llama
+print_info: vocab_only       = 0
+print_info: n_ctx_train      = 16384
+print_info: n_embd           = 2048
+print_info: n_layer          = 24
+print_info: n_head           = 16
+print_info: n_head_kv        = 16
+print_info: n_rot            = 128
+print_info: n_swa            = 0
+print_info: n_embd_head_k    = 128
+print_info: n_embd_head_v    = 128
+print_info: n_gqa            = 1
+print_info: n_embd_k_gqa     = 2048
+print_info: n_embd_v_gqa     = 2048
+print_info: f_norm_eps       = 0.0e+00
+print_info: f_norm_rms_eps   = 1.0e-06
+print_info: f_clamp_kqv      = 0.0e+00
+print_info: f_max_alibi_bias = 0.0e+00
+print_info: f_logit_scale    = 0.0e+00
+print_info: f_attn_scale     = 0.0e+00
+print_info: n_ff             = 5504
+print_info: n_expert         = 0
+print_info: n_expert_used    = 0
+print_info: causal attn      = 1
+print_info: pooling type     = 0
+print_info: rope type        = 0
+print_info: rope scaling     = linear
+print_info: freq_base_train  = 100000.0
+print_info: freq_scale_train = 0.25
+print_info: n_ctx_orig_yarn  = 16384
+print_info: rope_finetuned   = unknown
+print_info: ssm_d_conv       = 0
+print_info: ssm_d_inner      = 0
+print_info: ssm_d_state      = 0
+print_info: ssm_dt_rank      = 0
+print_info: ssm_dt_b_c_rms   = 0
+print_info: model type       = ?B
+print_info: model params     = 1.35 B
+print_info: general.name     = deepseek-ai
+print_info: vocab type       = BPE
+print_info: n_vocab          = 32256
+print_info: n_merges         = 31757
+print_info: BOS token        = 32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>'
+print_info: EOS token        = 32021 '<|EOT|>'
+print_info: EOT token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: PAD token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: LF token         = 185 '\u010a'
+print_info: FIM PRE token    = 32016 '<\uff5cfim\u2581begin\uff5c>'
+print_info: FIM SUF token    = 32015 '<\uff5cfim\u2581hole\uff5c>'
+print_info: FIM MID token    = 32017 '<\uff5cfim\u2581end\uff5c>'
+print_info: EOG token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: EOG token        = 32021 '<|EOT|>'
+print_info: max token length = 128
+load_tensors: loading model tensors, this can take a while... (mmap = true)
+load_tensors: layer   0 assigned to device CPU
+load_tensors: layer   1 assigned to device CPU
+load_tensors: layer   2 assigned to device CPU
+load_tensors: layer   3 assigned to device CPU
+load_tensors: layer   4 assigned to device CPU
+load_tensors: layer   5 assigned to device CPU
+load_tensors: layer   6 assigned to device CPU
+load_tensors: layer   7 assigned to device CPU
+load_tensors: layer   8 assigned to device CPU
+load_tensors: layer   9 assigned to device CPU
+load_tensors: layer  10 assigned to device CPU
+load_tensors: layer  11 assigned to device CPU
+load_tensors: layer  12 assigned to device CPU
+load_tensors: layer  13 assigned to device CPU
+load_tensors: layer  14 assigned to device CPU
+load_tensors: layer  15 assigned to device CPU
+load_tensors: layer  16 assigned to device CPU
+load_tensors: layer  17 assigned to device CPU
+load_tensors: layer  18 assigned to device CPU
+load_tensors: layer  19 assigned to device CPU
+load_tensors: layer  20 assigned to device CPU
+load_tensors: layer  21 assigned to device CPU
+load_tensors: layer  22 assigned to device CPU
+load_tensors: layer  23 assigned to device CPU
+load_tensors: layer  24 assigned to device CPU
+load_tensors: tensor 'token_embd.weight' (q4_0) (and 50 others) cannot be used with preferred buffer type CPU_AARCH64, using CPU instead
+load_tensors:  CPU_AARCH64 model buffer size =   651.38 MiB
+load_tensors:   CPU_Mapped model buffer size =   738.88 MiB
+repack: repack tensor blk.0.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.0.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.1.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.2.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.3.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.3.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.4.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.5.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.6.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.6.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.7.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.8.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.9.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.9.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.10.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.11.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.12.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.12.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.13.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.14.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.15.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.16.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.17.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.18.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.19.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.20.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.21.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.22.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.23.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_up.weight with q4_0_8x8
+....
+llama_init_from_model: n_seq_max     = 1
+llama_init_from_model: n_ctx         = 512
+llama_init_from_model: n_ctx_per_seq = 512
+llama_init_from_model: n_batch       = 512
+llama_init_from_model: n_ubatch      = 512
+llama_init_from_model: flash_attn    = 0
+llama_init_from_model: freq_base     = 100000.0
+llama_init_from_model: freq_scale    = 0.25
+llama_init_from_model: n_ctx_per_seq (512) < n_ctx_train (16384) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 512, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 24, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init:        CPU KV buffer size =    96.00 MiB
+llama_init_from_model: KV self size  =   96.00 MiB, K (f16):   48.00 MiB, V (f16):   48.00 MiB
+llama_init_from_model:        CPU  output buffer size =     0.12 MiB
+llama_init_from_model:        CPU compute buffer size =    67.00 MiB
+llama_init_from_model: graph nodes  = 774
+llama_init_from_model: graph splits = 1
+CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | LLAMAFILE = 1 | OPENMP = 1 | AARCH64_REPACK = 1 | 
+Model metadata: {'general.name': 'deepseek-ai', 'general.architecture': 'llama', 'llama.context_length': '16384', 'llama.rope.dimension_count': '128', 'llama.embedding_length': '2048', 'llama.block_count': '24', 'llama.feed_forward_length': '5504', 'llama.attention.head_count': '16', 'tokenizer.ggml.eos_token_id': '32021', 'general.file_type': '2', 'llama.attention.head_count_kv': '16', 'llama.attention.layer_norm_rms_epsilon': '0.000001', 'llama.rope.freq_base': '100000.000000', 'llama.rope.scaling.type': 'linear', 'llama.rope.scaling.factor': '4.000000', 'tokenizer.ggml.model': 'gpt2', 'general.quantization_version': '2', 'tokenizer.ggml.bos_token_id': '32013', 'tokenizer.ggml.padding_token_id': '32014', 'tokenizer.ggml.add_bos_token': 'true', 'tokenizer.ggml.add_eos_token': 'false', 'tokenizer.chat_template': "{% if not add_generation_prompt is defined %}\n{% set add_generation_prompt = false %}\n{% endif %}\n{%- set ns = namespace(found=false) -%}\n{%- for message in messages -%}\n    {%- if message['role'] == 'system' -%}\n        {%- set ns.found = true -%}\n    {%- endif -%}\n{%- endfor -%}\n{{bos_token}}{%- if not ns.found -%}\n{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\\n'}}\n{%- endif %}\n{%- for message in messages %}\n    {%- if message['role'] == 'system' %}\n{{ message['content'] }}\n    {%- else %}\n        {%- if message['role'] == 'user' %}\n{{'### Instruction:\\n' + message['content'] + '\\n'}}\n        {%- else %}\n{{'### Response:\\n' + message['content'] + '\\n<|EOT|>\\n'}}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{% if add_generation_prompt %}\n{{'### Response:'}}\n{% endif %}"}
+Available chat formats from metadata: chat_template.default
+Using gguf chat template: {% if not add_generation_prompt is defined %}
+{% set add_generation_prompt = false %}
+{% endif %}
+{%- set ns = namespace(found=false) -%}
+{%- for message in messages -%}
+    {%- if message['role'] == 'system' -%}
+        {%- set ns.found = true -%}
+    {%- endif -%}
+{%- endfor -%}
+{{bos_token}}{%- if not ns.found -%}
+{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\n'}}
+{%- endif %}
+{%- for message in messages %}
+    {%- if message['role'] == 'system' %}
+{{ message['content'] }}
+    {%- else %}
+        {%- if message['role'] == 'user' %}
+{{'### Instruction:\n' + message['content'] + '\n'}}
+        {%- else %}
+{{'### Response:\n' + message['content'] + '\n<|EOT|>\n'}}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{% if add_generation_prompt %}
+{{'### Response:'}}
+{% endif %}
+Using chat eos_token: <|EOT|>
+Using chat bos_token: <\uff5cbegin\u2581of\u2581sentence\uff5c>
+Traceback (most recent call last):
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 29, in <module>
+    initialize_setup()
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 24, in initialize_setup
+    chat_history = get_chat_history()
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 15, in get_chat_history
+    cursor.execute("SELECT user, response FROM chat_history ORDER BY id ASC")
+sqlite3.OperationalError: no such table: chat_history
+
+2025-03-15 03:24:23,574 - Error running C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py: llama_model_loader: loaded meta data with 26 key-value pairs and 219 tensors from C:\DeepSeekAI\models\small_models\initializer.safetensors (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = deepseek-ai
+llama_model_loader: - kv   2:                       llama.context_length u32              = 16384
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 2048
+llama_model_loader: - kv   4:                          llama.block_count u32              = 24
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 5504
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 16
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 16
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 100000.000000
+llama_model_loader: - kv  11:                    llama.rope.scaling.type str              = linear
+llama_model_loader: - kv  12:                  llama.rope.scaling.factor f32              = 4.000000
+llama_model_loader: - kv  13:                          general.file_type u32              = 2
+llama_model_loader: - kv  14:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32256]   = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32256]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32256]   = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  18:                      tokenizer.ggml.merges arr[str,31757]   = ["\u0120 \u0120", "\u0120 t", "\u0120 a", "i n", "h e...
+llama_model_loader: - kv  19:                tokenizer.ggml.bos_token_id u32              = 32013
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 32021
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 32014
+llama_model_loader: - kv  22:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  23:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   49 tensors
+llama_model_loader: - type q4_0:  169 tensors
+llama_model_loader: - type q6_K:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 738.88 MiB (4.60 BPW) 
+load: missing pre-tokenizer type, using: 'default'
+load:                                             
+load: ************************************        
+load: GENERATION QUALITY WILL BE DEGRADED!        
+load: CONSIDER REGENERATING THE MODEL             
+load: ************************************        
+load:                                             
+init_tokenizer: initializing tokenizer for type 2
+load: control-looking token:  32015 '<\uff5cfim\u2581hole\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32017 '<\uff5cfim\u2581end\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32016 '<\uff5cfim\u2581begin\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control token:  32014 '<\uff5cend\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32015 '<\uff5cfim\u2581hole\uff5c>' is not marked as EOG
+load: control token:  32017 '<\uff5cfim\u2581end\uff5c>' is not marked as EOG
+load: control token:  32016 '<\uff5cfim\u2581begin\uff5c>' is not marked as EOG
+load: control token:  32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32021 '<|EOT|>' is not marked as EOG
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special tokens cache size = 256
+load: token to piece cache size = 0.1792 MB
+print_info: arch             = llama
+print_info: vocab_only       = 0
+print_info: n_ctx_train      = 16384
+print_info: n_embd           = 2048
+print_info: n_layer          = 24
+print_info: n_head           = 16
+print_info: n_head_kv        = 16
+print_info: n_rot            = 128
+print_info: n_swa            = 0
+print_info: n_embd_head_k    = 128
+print_info: n_embd_head_v    = 128
+print_info: n_gqa            = 1
+print_info: n_embd_k_gqa     = 2048
+print_info: n_embd_v_gqa     = 2048
+print_info: f_norm_eps       = 0.0e+00
+print_info: f_norm_rms_eps   = 1.0e-06
+print_info: f_clamp_kqv      = 0.0e+00
+print_info: f_max_alibi_bias = 0.0e+00
+print_info: f_logit_scale    = 0.0e+00
+print_info: f_attn_scale     = 0.0e+00
+print_info: n_ff             = 5504
+print_info: n_expert         = 0
+print_info: n_expert_used    = 0
+print_info: causal attn      = 1
+print_info: pooling type     = 0
+print_info: rope type        = 0
+print_info: rope scaling     = linear
+print_info: freq_base_train  = 100000.0
+print_info: freq_scale_train = 0.25
+print_info: n_ctx_orig_yarn  = 16384
+print_info: rope_finetuned   = unknown
+print_info: ssm_d_conv       = 0
+print_info: ssm_d_inner      = 0
+print_info: ssm_d_state      = 0
+print_info: ssm_dt_rank      = 0
+print_info: ssm_dt_b_c_rms   = 0
+print_info: model type       = ?B
+print_info: model params     = 1.35 B
+print_info: general.name     = deepseek-ai
+print_info: vocab type       = BPE
+print_info: n_vocab          = 32256
+print_info: n_merges         = 31757
+print_info: BOS token        = 32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>'
+print_info: EOS token        = 32021 '<|EOT|>'
+print_info: EOT token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: PAD token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: LF token         = 185 '\u010a'
+print_info: FIM PRE token    = 32016 '<\uff5cfim\u2581begin\uff5c>'
+print_info: FIM SUF token    = 32015 '<\uff5cfim\u2581hole\uff5c>'
+print_info: FIM MID token    = 32017 '<\uff5cfim\u2581end\uff5c>'
+print_info: EOG token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: EOG token        = 32021 '<|EOT|>'
+print_info: max token length = 128
+load_tensors: loading model tensors, this can take a while... (mmap = true)
+load_tensors: layer   0 assigned to device CPU
+load_tensors: layer   1 assigned to device CPU
+load_tensors: layer   2 assigned to device CPU
+load_tensors: layer   3 assigned to device CPU
+load_tensors: layer   4 assigned to device CPU
+load_tensors: layer   5 assigned to device CPU
+load_tensors: layer   6 assigned to device CPU
+load_tensors: layer   7 assigned to device CPU
+load_tensors: layer   8 assigned to device CPU
+load_tensors: layer   9 assigned to device CPU
+load_tensors: layer  10 assigned to device CPU
+load_tensors: layer  11 assigned to device CPU
+load_tensors: layer  12 assigned to device CPU
+load_tensors: layer  13 assigned to device CPU
+load_tensors: layer  14 assigned to device CPU
+load_tensors: layer  15 assigned to device CPU
+load_tensors: layer  16 assigned to device CPU
+load_tensors: layer  17 assigned to device CPU
+load_tensors: layer  18 assigned to device CPU
+load_tensors: layer  19 assigned to device CPU
+load_tensors: layer  20 assigned to device CPU
+load_tensors: layer  21 assigned to device CPU
+load_tensors: layer  22 assigned to device CPU
+load_tensors: layer  23 assigned to device CPU
+load_tensors: layer  24 assigned to device CPU
+load_tensors: tensor 'token_embd.weight' (q4_0) (and 50 others) cannot be used with preferred buffer type CPU_AARCH64, using CPU instead
+load_tensors:  CPU_AARCH64 model buffer size =   651.38 MiB
+load_tensors:   CPU_Mapped model buffer size =   738.88 MiB
+repack: repack tensor blk.0.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.0.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.1.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.2.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.3.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.3.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.4.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.5.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.6.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.6.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.7.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.8.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.9.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.9.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.10.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.11.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.12.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.12.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.13.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.14.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.15.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.16.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.17.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.18.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.19.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.20.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.21.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.22.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.23.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_up.weight with q4_0_8x8
+....
+llama_init_from_model: n_seq_max     = 1
+llama_init_from_model: n_ctx         = 512
+llama_init_from_model: n_ctx_per_seq = 512
+llama_init_from_model: n_batch       = 512
+llama_init_from_model: n_ubatch      = 512
+llama_init_from_model: flash_attn    = 0
+llama_init_from_model: freq_base     = 100000.0
+llama_init_from_model: freq_scale    = 0.25
+llama_init_from_model: n_ctx_per_seq (512) < n_ctx_train (16384) -- the full capacity of the model will not be utilized
+llama_kv_cache_init: kv_size = 512, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 24, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init:        CPU KV buffer size =    96.00 MiB
+llama_init_from_model: KV self size  =   96.00 MiB, K (f16):   48.00 MiB, V (f16):   48.00 MiB
+llama_init_from_model:        CPU  output buffer size =     0.12 MiB
+llama_init_from_model:        CPU compute buffer size =    67.00 MiB
+llama_init_from_model: graph nodes  = 774
+llama_init_from_model: graph splits = 1
+CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | LLAMAFILE = 1 | OPENMP = 1 | AARCH64_REPACK = 1 | 
+Model metadata: {'general.name': 'deepseek-ai', 'general.architecture': 'llama', 'llama.context_length': '16384', 'llama.rope.dimension_count': '128', 'llama.embedding_length': '2048', 'llama.block_count': '24', 'llama.feed_forward_length': '5504', 'llama.attention.head_count': '16', 'tokenizer.ggml.eos_token_id': '32021', 'general.file_type': '2', 'llama.attention.head_count_kv': '16', 'llama.attention.layer_norm_rms_epsilon': '0.000001', 'llama.rope.freq_base': '100000.000000', 'llama.rope.scaling.type': 'linear', 'llama.rope.scaling.factor': '4.000000', 'tokenizer.ggml.model': 'gpt2', 'general.quantization_version': '2', 'tokenizer.ggml.bos_token_id': '32013', 'tokenizer.ggml.padding_token_id': '32014', 'tokenizer.ggml.add_bos_token': 'true', 'tokenizer.ggml.add_eos_token': 'false', 'tokenizer.chat_template': "{% if not add_generation_prompt is defined %}\n{% set add_generation_prompt = false %}\n{% endif %}\n{%- set ns = namespace(found=false) -%}\n{%- for message in messages -%}\n    {%- if message['role'] == 'system' -%}\n        {%- set ns.found = true -%}\n    {%- endif -%}\n{%- endfor -%}\n{{bos_token}}{%- if not ns.found -%}\n{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\\n'}}\n{%- endif %}\n{%- for message in messages %}\n    {%- if message['role'] == 'system' %}\n{{ message['content'] }}\n    {%- else %}\n        {%- if message['role'] == 'user' %}\n{{'### Instruction:\\n' + message['content'] + '\\n'}}\n        {%- else %}\n{{'### Response:\\n' + message['content'] + '\\n<|EOT|>\\n'}}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{% if add_generation_prompt %}\n{{'### Response:'}}\n{% endif %}"}
+Available chat formats from metadata: chat_template.default
+Using gguf chat template: {% if not add_generation_prompt is defined %}
+{% set add_generation_prompt = false %}
+{% endif %}
+{%- set ns = namespace(found=false) -%}
+{%- for message in messages -%}
+    {%- if message['role'] == 'system' -%}
+        {%- set ns.found = true -%}
+    {%- endif -%}
+{%- endfor -%}
+{{bos_token}}{%- if not ns.found -%}
+{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\n'}}
+{%- endif %}
+{%- for message in messages %}
+    {%- if message['role'] == 'system' %}
+{{ message['content'] }}
+    {%- else %}
+        {%- if message['role'] == 'user' %}
+{{'### Instruction:\n' + message['content'] + '\n'}}
+        {%- else %}
+{{'### Response:\n' + message['content'] + '\n<|EOT|>\n'}}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{% if add_generation_prompt %}
+{{'### Response:'}}
+{% endif %}
+Using chat eos_token: <|EOT|>
+Using chat bos_token: <\uff5cbegin\u2581of\u2581sentence\uff5c>
+Traceback (most recent call last):
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 29, in <module>
+    initialize_setup()
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 24, in initialize_setup
+    chat_history = get_chat_history()
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 15, in get_chat_history
+    cursor.execute("SELECT user, response FROM chat_history ORDER BY id ASC")
+sqlite3.OperationalError: no such table: chat_history
+
+2025-03-15 03:40:10,494 - Error running C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py: llama_model_loader: loaded meta data with 26 key-value pairs and 219 tensors from C:\DeepSeekAI\models\small_models\initializer.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = deepseek-ai
+llama_model_loader: - kv   2:                       llama.context_length u32              = 16384
+llama_model_loader: - kv   3:                     llama.embedding_length u32              = 2048
+llama_model_loader: - kv   4:                          llama.block_count u32              = 24
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 5504
+llama_model_loader: - kv   6:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv   7:                 llama.attention.head_count u32              = 16
+llama_model_loader: - kv   8:              llama.attention.head_count_kv u32              = 16
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                       llama.rope.freq_base f32              = 100000.000000
+llama_model_loader: - kv  11:                    llama.rope.scaling.type str              = linear
+llama_model_loader: - kv  12:                  llama.rope.scaling.factor f32              = 4.000000
+llama_model_loader: - kv  13:                          general.file_type u32              = 2
+llama_model_loader: - kv  14:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32256]   = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32256]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32256]   = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  18:                      tokenizer.ggml.merges arr[str,31757]   = ["\u0120 \u0120", "\u0120 t", "\u0120 a", "i n", "h e...
+llama_model_loader: - kv  19:                tokenizer.ggml.bos_token_id u32              = 32013
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 32021
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 32014
+llama_model_loader: - kv  22:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  23:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   49 tensors
+llama_model_loader: - type q4_0:  169 tensors
+llama_model_loader: - type q6_K:    1 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_0
+print_info: file size   = 738.88 MiB (4.60 BPW) 
+load: missing pre-tokenizer type, using: 'default'
+load:                                             
+load: ************************************        
+load: GENERATION QUALITY WILL BE DEGRADED!        
+load: CONSIDER REGENERATING THE MODEL             
+load: ************************************        
+load:                                             
+init_tokenizer: initializing tokenizer for type 2
+load: control-looking token:  32015 '<\uff5cfim\u2581hole\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32017 '<\uff5cfim\u2581end\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control-looking token:  32016 '<\uff5cfim\u2581begin\uff5c>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: control token:  32014 '<\uff5cend\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32015 '<\uff5cfim\u2581hole\uff5c>' is not marked as EOG
+load: control token:  32017 '<\uff5cfim\u2581end\uff5c>' is not marked as EOG
+load: control token:  32016 '<\uff5cfim\u2581begin\uff5c>' is not marked as EOG
+load: control token:  32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>' is not marked as EOG
+load: control token:  32021 '<|EOT|>' is not marked as EOG
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special_eot_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: special tokens cache size = 256
+load: token to piece cache size = 0.1792 MB
+print_info: arch             = llama
+print_info: vocab_only       = 0
+print_info: n_ctx_train      = 16384
+print_info: n_embd           = 2048
+print_info: n_layer          = 24
+print_info: n_head           = 16
+print_info: n_head_kv        = 16
+print_info: n_rot            = 128
+print_info: n_swa            = 0
+print_info: n_embd_head_k    = 128
+print_info: n_embd_head_v    = 128
+print_info: n_gqa            = 1
+print_info: n_embd_k_gqa     = 2048
+print_info: n_embd_v_gqa     = 2048
+print_info: f_norm_eps       = 0.0e+00
+print_info: f_norm_rms_eps   = 1.0e-06
+print_info: f_clamp_kqv      = 0.0e+00
+print_info: f_max_alibi_bias = 0.0e+00
+print_info: f_logit_scale    = 0.0e+00
+print_info: f_attn_scale     = 0.0e+00
+print_info: n_ff             = 5504
+print_info: n_expert         = 0
+print_info: n_expert_used    = 0
+print_info: causal attn      = 1
+print_info: pooling type     = 0
+print_info: rope type        = 0
+print_info: rope scaling     = linear
+print_info: freq_base_train  = 100000.0
+print_info: freq_scale_train = 0.25
+print_info: n_ctx_orig_yarn  = 16384
+print_info: rope_finetuned   = unknown
+print_info: ssm_d_conv       = 0
+print_info: ssm_d_inner      = 0
+print_info: ssm_d_state      = 0
+print_info: ssm_dt_rank      = 0
+print_info: ssm_dt_b_c_rms   = 0
+print_info: model type       = ?B
+print_info: model params     = 1.35 B
+print_info: general.name     = deepseek-ai
+print_info: vocab type       = BPE
+print_info: n_vocab          = 32256
+print_info: n_merges         = 31757
+print_info: BOS token        = 32013 '<\uff5cbegin\u2581of\u2581sentence\uff5c>'
+print_info: EOS token        = 32021 '<|EOT|>'
+print_info: EOT token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: PAD token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: LF token         = 185 '\u010a'
+print_info: FIM PRE token    = 32016 '<\uff5cfim\u2581begin\uff5c>'
+print_info: FIM SUF token    = 32015 '<\uff5cfim\u2581hole\uff5c>'
+print_info: FIM MID token    = 32017 '<\uff5cfim\u2581end\uff5c>'
+print_info: EOG token        = 32014 '<\uff5cend\u2581of\u2581sentence\uff5c>'
+print_info: EOG token        = 32021 '<|EOT|>'
+print_info: max token length = 128
+load_tensors: loading model tensors, this can take a while... (mmap = true)
+load_tensors: layer   0 assigned to device CPU
+load_tensors: layer   1 assigned to device CPU
+load_tensors: layer   2 assigned to device CPU
+load_tensors: layer   3 assigned to device CPU
+load_tensors: layer   4 assigned to device CPU
+load_tensors: layer   5 assigned to device CPU
+load_tensors: layer   6 assigned to device CPU
+load_tensors: layer   7 assigned to device CPU
+load_tensors: layer   8 assigned to device CPU
+load_tensors: layer   9 assigned to device CPU
+load_tensors: layer  10 assigned to device CPU
+load_tensors: layer  11 assigned to device CPU
+load_tensors: layer  12 assigned to device CPU
+load_tensors: layer  13 assigned to device CPU
+load_tensors: layer  14 assigned to device CPU
+load_tensors: layer  15 assigned to device CPU
+load_tensors: layer  16 assigned to device CPU
+load_tensors: layer  17 assigned to device CPU
+load_tensors: layer  18 assigned to device CPU
+load_tensors: layer  19 assigned to device CPU
+load_tensors: layer  20 assigned to device CPU
+load_tensors: layer  21 assigned to device CPU
+load_tensors: layer  22 assigned to device CPU
+load_tensors: layer  23 assigned to device CPU
+load_tensors: layer  24 assigned to device CPU
+load_tensors: tensor 'token_embd.weight' (q4_0) (and 50 others) cannot be used with preferred buffer type CPU_AARCH64, using CPU instead
+load_tensors:  CPU_AARCH64 model buffer size =   651.38 MiB
+load_tensors:   CPU_Mapped model buffer size =   738.88 MiB
+repack: repack tensor blk.0.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.0.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.0.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.0.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.1.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.1.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.1.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.1.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.2.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.2.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.2.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.2.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.3.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.3.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.3.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.3.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.4.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.4.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.4.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.4.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.5.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.5.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.5.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.5.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.6.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.6.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.6.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.6.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.7.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.7.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.7.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.7.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.8.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.8.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.8.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.8.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.9.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.9.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.9.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.9.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.10.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.10.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.10.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.10.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.11.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.11.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.11.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.11.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.12.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.12.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.12.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.12.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.13.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.13.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.13.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.13.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.14.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.14.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.14.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.14.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.15.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.15.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.15.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.15.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.16.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.16.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.16.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.16.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.17.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.17.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.17.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.17.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.18.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.18.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.18.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.18.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.19.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.19.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.19.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.19.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.20.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.20.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.20.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.20.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.21.attn_v.weight with q4_0_8x8
+.repack: repack tensor blk.21.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.21.ffn_down.weight with q4_0_8x8
+repack: repack tensor blk.21.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_q.weight with q4_0_8x8
+.repack: repack tensor blk.22.attn_k.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.22.attn_output.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_gate.weight with q4_0_8x8
+repack: repack tensor blk.22.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.22.ffn_up.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_q.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_k.weight with q4_0_8x8
+.repack: repack tensor blk.23.attn_v.weight with q4_0_8x8
+repack: repack tensor blk.23.attn_output.weight with q4_0_8x8
+repack: repack tensor blk.23.ffn_gate.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_down.weight with q4_0_8x8
+.repack: repack tensor blk.23.ffn_up.weight with q4_0_8x8
+....
+llama_init_from_model: n_seq_max     = 1
+llama_init_from_model: n_ctx         = 16384
+llama_init_from_model: n_ctx_per_seq = 16384
+llama_init_from_model: n_batch       = 512
+llama_init_from_model: n_ubatch      = 512
+llama_init_from_model: flash_attn    = 0
+llama_init_from_model: freq_base     = 100000.0
+llama_init_from_model: freq_scale    = 0.25
+llama_kv_cache_init: kv_size = 16384, offload = 1, type_k = 'f16', type_v = 'f16', n_layer = 24, can_shift = 1
+llama_kv_cache_init: layer 0: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 1: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 2: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 3: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 4: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 5: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 6: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 7: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 8: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 9: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 10: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 11: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 12: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 13: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 14: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 15: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 16: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 17: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 18: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 19: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 20: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 21: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 22: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init: layer 23: n_embd_k_gqa = 2048, n_embd_v_gqa = 2048
+llama_kv_cache_init:        CPU KV buffer size =  3072.00 MiB
+llama_init_from_model: KV self size  = 3072.00 MiB, K (f16): 1536.00 MiB, V (f16): 1536.00 MiB
+llama_init_from_model:        CPU  output buffer size =     0.12 MiB
+llama_init_from_model:        CPU compute buffer size =   560.01 MiB
+llama_init_from_model: graph nodes  = 774
+llama_init_from_model: graph splits = 1
+CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | LLAMAFILE = 1 | OPENMP = 1 | AARCH64_REPACK = 1 | 
+Model metadata: {'general.name': 'deepseek-ai', 'general.architecture': 'llama', 'llama.context_length': '16384', 'llama.rope.dimension_count': '128', 'llama.embedding_length': '2048', 'llama.block_count': '24', 'llama.feed_forward_length': '5504', 'llama.attention.head_count': '16', 'tokenizer.ggml.eos_token_id': '32021', 'general.file_type': '2', 'llama.attention.head_count_kv': '16', 'llama.attention.layer_norm_rms_epsilon': '0.000001', 'llama.rope.freq_base': '100000.000000', 'llama.rope.scaling.type': 'linear', 'llama.rope.scaling.factor': '4.000000', 'tokenizer.ggml.model': 'gpt2', 'general.quantization_version': '2', 'tokenizer.ggml.bos_token_id': '32013', 'tokenizer.ggml.padding_token_id': '32014', 'tokenizer.ggml.add_bos_token': 'true', 'tokenizer.ggml.add_eos_token': 'false', 'tokenizer.chat_template': "{% if not add_generation_prompt is defined %}\n{% set add_generation_prompt = false %}\n{% endif %}\n{%- set ns = namespace(found=false) -%}\n{%- for message in messages -%}\n    {%- if message['role'] == 'system' -%}\n        {%- set ns.found = true -%}\n    {%- endif -%}\n{%- endfor -%}\n{{bos_token}}{%- if not ns.found -%}\n{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\\n'}}\n{%- endif %}\n{%- for message in messages %}\n    {%- if message['role'] == 'system' %}\n{{ message['content'] }}\n    {%- else %}\n        {%- if message['role'] == 'user' %}\n{{'### Instruction:\\n' + message['content'] + '\\n'}}\n        {%- else %}\n{{'### Response:\\n' + message['content'] + '\\n<|EOT|>\\n'}}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{% if add_generation_prompt %}\n{{'### Response:'}}\n{% endif %}"}
+Available chat formats from metadata: chat_template.default
+Using gguf chat template: {% if not add_generation_prompt is defined %}
+{% set add_generation_prompt = false %}
+{% endif %}
+{%- set ns = namespace(found=false) -%}
+{%- for message in messages -%}
+    {%- if message['role'] == 'system' -%}
+        {%- set ns.found = true -%}
+    {%- endif -%}
+{%- endfor -%}
+{{bos_token}}{%- if not ns.found -%}
+{{'You are an AI programming assistant, utilizing the Deepseek Coder model, developed by Deepseek Company, and you only answer questions related to computer science. For politically sensitive questions, security and privacy issues, and other non-computer science questions, you will refuse to answer\n'}}
+{%- endif %}
+{%- for message in messages %}
+    {%- if message['role'] == 'system' %}
+{{ message['content'] }}
+    {%- else %}
+        {%- if message['role'] == 'user' %}
+{{'### Instruction:\n' + message['content'] + '\n'}}
+        {%- else %}
+{{'### Response:\n' + message['content'] + '\n<|EOT|>\n'}}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{% if add_generation_prompt %}
+{{'### Response:'}}
+{% endif %}
+Using chat eos_token: <|EOT|>
+Using chat bos_token: <\uff5cbegin\u2581of\u2581sentence\uff5c>
+Traceback (most recent call last):
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 36, in <module>
+    initialize_setup()
+  File "C:\DeepSeekAI\ai-git-developer\scripts\ai_initializer.py", line 29, in initialize_setup
+    response = AGENTS["initializer"].create_completion(
+  File "C:\Users\jamie\AppData\Local\Programs\Python\Python310\lib\site-packages\llama_cpp\llama.py", line 1835, in create_completion
+    completion: Completion = next(completion_or_chunks)  # type: ignore
+  File "C:\Users\jamie\AppData\Local\Programs\Python\Python310\lib\site-packages\llama_cpp\llama.py", line 1271, in _create_completion
+    raise ValueError(
+ValueError: Requested tokens (481681) exceed context window of 16384
+
